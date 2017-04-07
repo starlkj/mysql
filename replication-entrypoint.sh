@@ -29,7 +29,7 @@ collation-server = utf8_general_ci
 
 server-id      = $SERVER_ID
 log_bin        = /var/log/mysql/mysql-bin.log
-binlog_do_db   = exntu
+binlog_do_db   = $DB_NAME
 sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
 symbolic-links=0
 !includedir /etc/mysql/conf.d/
