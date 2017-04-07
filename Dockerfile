@@ -4,4 +4,5 @@ ENV REPLICATION_PASSWORD t~paas
 ENV SERVER_ID t~paas
 ENV DB_NAME exntu
 COPY replication-entrypoint.sh /usr/local/bin/
-exec replication-entrypoint.sh
+ENTRYPOINT ["replication-entrypoint.sh"]
+CMD ["mysqld"]
