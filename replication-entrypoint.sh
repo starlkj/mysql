@@ -66,5 +66,3 @@ mysql -u root -e "\
   IDENTIFIED BY '$REPLICATION_PASSWORD'; \
   FLUSH PRIVILEGES; \
 "
-
-exec docker-entrypoint.sh "$@"
