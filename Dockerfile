@@ -1,4 +1,4 @@
 FROM mariadb:10.1
-COPY replication-entrypoint.sh /usr/local/bin/replication-entrypoint.sh
-RUN chmod 755 /usr/local/bin/replication-entrypoint.sh \
-   && replication-entrypoint.sh
+COPY init-galera.sh /usr/local/bin/init-galera.sh
+RUN chmod 755 /usr/local/bin/init-galera.sh \
+   && init-galera.sh
